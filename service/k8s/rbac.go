@@ -25,7 +25,7 @@ type RBAC interface {
 	CreateOrUpdateRoleBinding(namespace string, binding *rbacv1.RoleBinding) error
 }
 
-// NamespaceService is the Namespace service implementation using API calls to kubernetes.
+// RBACService NamespaceService is the Namespace service implementation using API calls to kubernetes.
 type RBACService struct {
 	kubeClient      kubernetes.Interface
 	logger          log.Logger
